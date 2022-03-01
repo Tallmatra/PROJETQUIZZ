@@ -1,0 +1,154 @@
+{
+    "users":[
+    {
+    "nom": "Trawaré",
+    "prenom":"Mamadou Tall",
+    "login":"trawaremamadou@gmail.com",
+    "password":"admin",
+    "role":"ROLE_ADMIN",
+    "score":0
+    }, 
+    {
+        "nom": "Trawaré",
+        "prenom":"Souleymane",
+        "login":"trawarsouley@gmail.com",
+        "password":"admin",
+        "role":"ROLE_ADMIN",
+        "score":0
+    },
+    {
+    "nom":"Diop",
+    "prenom":"Amadou Ablaye", 
+    "login":"amadouabdou@gmail.com",
+    "password":"joueur",
+    "role":"ROLE_JOUEUR",
+    "score":150
+    },
+    {
+        "nom":"Trawaré",
+        "prenom":"René Sidy", 
+        "login":"renesidy@gmail.com",
+        "password":"joueur",
+        "role":"ROLE_JOUEUR",
+        "score":120
+        },
+        {
+            "nom":"Gueye",
+            "prenom":"Malick", 
+            "login":"gmalick@gmail.com",
+            "password":"joueur",
+            "role":"ROLE_JOUEUR",
+            "score":130
+            },
+            {
+                "nom":"Dieng",
+                "prenom":"Papa Demba", 
+                "login":"diengdemba@gmail.com",
+                "password":"joueur",
+                "role":"ROLE_JOUEUR",
+                "score":100
+                },
+                {
+                    "nom":"Sow",
+                    "prenom":"Idrissa", 
+                    "login":"idrissasowgandiol@gmail.com",
+                    "password":"joueur",
+                    "role":"ROLE_JOUEUR",
+                    "score":100
+                    },
+                    {
+                        "nom":"Mbaye",
+                        "prenom":"Salla Ba", 
+                        "login":"sallaladiva@gmail.com",
+                        "password":"joueur",
+                        "role":"ROLE_JOUEUR",
+                        "score":110
+                        },
+                        
+                    {
+                        "nom":"Seck",
+                        "prenom":"Aldemba", 
+                        "login":"alseck@gmail.com",
+                        "password":"joueur",
+                        "role":"ROLE_JOUEUR",
+                        "score":113
+                        },
+                        
+                    {
+                        "nom":"Lam",
+                        "prenom":"Malick Thioune", 
+                        "login":"thiounelam@gmail.com",
+                        "password":"joueur",
+                        "role":"ROLE_JOUEUR",
+                        "score":111
+                        },
+                        
+                    {
+                        "nom":"Coulibaly",
+                        "prenom":"Abdou karim", 
+                        "login":"karimabdou@gmail.com",
+                        "password":"joueur",
+                        "role":"ROLE_JOUEUR",
+                        "score":90
+                        },
+                        
+                    {
+                        "nom":"Faye",
+                        "prenom":"Moustapha", 
+                        "login":"fayemoustapha@gmail.com",
+                        "password":"joueur",
+                        "role":"ROLE_JOUEUR",
+                        "score":50
+                        },
+                        
+                    {
+                        "nom":"Ndiaye",
+                        "prenom":"Djiby", 
+                        "login":"djissonndiaye@gmail.com",
+                        "password":"joueur",
+                        "role":"ROLE_JOUEUR",
+                        "score":99
+                    }
+                        
+                    ,
+                    {
+                        "nom":"Samakhé",
+                        "prenom":"Sidy", 
+                        "login":"samakhesidy@gmail.com",
+                        "password":"joueur",
+                        "role":"ROLE_JOUEUR",
+                        "score":70
+                        },
+                        
+                        {
+                            "nom":"Diatta",
+                            "prenom":"El Bachir", 
+                            "login":"sallaladiva@gmail.com",
+                            "password":"joueur",
+                            "role":"ROLE_JOUEUR",
+                            "score":89
+                            },
+                            
+                    {
+                        "nom":"Diedhiou",
+                        "prenom":"Paterne", 
+                        "login":"paterdiedhiou@gmail.com",
+                        "password":"joueur",
+                        "role":"ROLE_JOUEUR",
+                        "score":100
+                        }
+                        ,
+                    {
+                        "nom":"Diop",
+                        "prenom":"Ibrahima Lang", 
+                        "login":"langibrahim.com",
+                        "password":"joueur",
+                        "role":"ROLE_JOUEUR",
+                        "score":110
+                        }
+                        
+                        
+                            
+
+    ]
+    }
