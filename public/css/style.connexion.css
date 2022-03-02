@@ -6,13 +6,15 @@
 }
 body{
     display: flex;
-    
+    justify-content: center;
+    transform: translateY(40vh);
 
 }
 
 #container{
     width: auto;
     height: auto;
+    
    
     
 }
@@ -21,8 +23,29 @@ body{
     width: 50vh;
     
 }
-#input{
+#login{
     width: 50vh;
+    height: 5vh;
+    font-size: 2vh;
     
+    
+
+}
+#password{
+    width:50vh ;
+    height: 5vh;
+    font-size: 2vh;
+
+}
+#connexion{
+    width: 20vh;
+    height:4vh ;
+    border: hidden;
+    background-color: rgb(40, 131, 131);
+}
+#inscrire{
+    width: 20vh;
+    height:4vh ;
+    border: hidden;
 
 }

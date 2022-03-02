@@ -6,15 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form action="" <?=WEB_ROOT?> method="POST">
         <div id="container">
             <div id="head"> <h1>Login Form </h1></div> <br>
-            <div id="input">
-                <input type="text" name="login"  placeholder="login"> <br><br>
-                <input type="text" name="Password"  placeholder="Password"> <br><br>
-                <input type="button" name="button" value="Connexion">
-                <input type="button" name="button" value="S'inscrire pour jouer?">
-             </div>
+            
+                <input type="text" name="login"  placeholder="Login" id="login"> <br><br>
+                <input type="password" name="Password"  placeholder="Password" id="password"> <br><br>
+                
+                <input type="button" name="button" value="Connexion" id="connexion">
+                <input type="button" name="button" value="S'inscrire pour jouer?" id="inscrire">
+             
             
         </div>
     </form>
