@@ -7,6 +7,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
      if(($_REQUEST['action']=="connexion")){
       $login=$_POST['login'] ;
       $password=$_POST['password'] ;
+      
       connexion($login,$password); 
 
       }
@@ -42,7 +43,7 @@ function connexion(string $login,string $password ):void{
   }
 
   champ_obligatoire('password',$password,$errors );
-  if(count($errors==0)){
+  if(count($errors==$_REQUEST0)){
     $user=find_user_login_password($login, $password);
     if(count($user)!=0){
       $_SESSION["KEY_USER_CONNECT"]=$user;

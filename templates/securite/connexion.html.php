@@ -19,7 +19,8 @@
             
         </div>
     </form>
-    
+   <script src="<?=WEB_PUBLIC."css".DIRECTORY_SEPARATOR."style.connexion.css"?>"></script>
     
 </body>
-</html>
+<script src="<?=WEB_PUBLIC."css".DIRECTORY_SEPARATOR."style.connexion.css"?>"></script>
+</html> 
