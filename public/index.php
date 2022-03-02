@@ -1,4 +1,8 @@
 <?php  
+ //Demarrage de la sesion
+if(session_status()==PHP_SESSION_NONE){
+    session_start();
+} 
 //inclusion des constantes
 require_once dirname(dirname(__FILE__))."/config/constantes.php";
 //inclusion du Validator

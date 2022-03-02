@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0vh;
+    padding: 0vh;
+
+}
+body{
+    display: flex;
+    
+
+}
+
+#container{
+    width: auto;
+    height: auto;
+   
+    
+}
+#head{
+    background-color: rgb(40, 131, 131);
+    width: 50vh;
+    
+}
+#input{
+    width: 50vh;
+    
+
+}
