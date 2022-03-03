@@ -1,3 +1,10 @@
+<?php
+    if(isset($_SESSION[KEY_ERRORS]))
+    {
+        $errors=$_SESSION[KEY_ERRORS];
+        unset($_SESSION[KEY_ERRORS]);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,21 +13,46 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" <?=WEB_ROOT?> method="POST">
-        <div id="container">
-            <div id="head"> <h1>Login Form </h1></div> <br>
-            
-                <input type="text" name="login"  placeholder="Login" id="login"> <br><br>
-                <input type="password" name="Password"  placeholder="Password" id="password"> <br><br>
+    
+    
+    <div id="container">
+    <div id="head"> <h1>Login Form </h1></div> 
+        <form action="<?=WEB_PUBLIC?>" method="POST" onSubmit=" return allOk()" >
+        <input type="hidden" name="controller" value="securite">
+        <input type="hidden" name="action" value="connexion">
+
+            <div id=input>
+            <?php if (isset($errors['connexion'])):?>
+        <p style="color:red"><?= $errors['connexion'];?></p>
+      <?php endif?>
+                <div class="login">
+                    <input type="text" name="login" id="login" placeholder="Login" > 
+                    <small></small>
+                    <?php if (isset($errors['login'])):?>
+        <p style="color:red"><?= $errors['login'];?></p>
+      <?php endif?>
+                </div>
+                <div class="login">
+                   <input type="password" name="Password"  placeholder="Password" id="password"> 
+                   <small></small>
+                   <?php if (isset($errors['password'])):?>
+        <p style="color:red"><?= $errors['password'];?></p>
+      <?php endif?>
+                </div>
                 
-                <input type="button" name="button" value="Connexion" id="connexion">
-                <input type="button" name="button" value="S'inscrire pour jouer?" id="inscrire">
-             
-            
-        </div>
-    </form>
-   <script src="<?=WEB_PUBLIC."css".DIRECTORY_SEPARATOR."style.connexion.css"?>"></script>
+                <div class="connexion">
+                 <input type="submit" name="button" value="Connexion" id="connexion">
+
+                 <p class="lien">S'inscrire pour jouer?</p>
+                </div>
+                
+                
+            </div> 
+        </form>   
+    </div>
+    
+   <script src="<?=WEB_PUBLIC."js".DIRECTORY_SEPARATOR."script.js"?>"></script>
     
 </body>
-<script src="<?=WEB_PUBLIC."css".DIRECTORY_SEPARATOR."style.connexion.css"?>"></script>
+
 </html> 

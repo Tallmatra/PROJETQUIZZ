@@ -4,7 +4,7 @@
     "nom": "Trawaré",
     "prenom":"Mamadou Tall",
     "login":"trawaremamadou@gmail.com",
-    "password":"admin",
+    "password":"admin21",
     "role":"ROLE_ADMIN",
     "score":0
     }, 
@@ -44,7 +44,7 @@
                 "nom":"Dieng",
                 "prenom":"Papa Demba", 
                 "login":"diengdemba@gmail.com",
-                "password":"joueur",
+                "password":"joueur1",
                 "role":"ROLE_JOUEUR",
                 "score":100
                 },

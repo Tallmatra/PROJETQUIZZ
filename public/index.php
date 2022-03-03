@@ -1,4 +1,7 @@
 <?php  
+/* echo "<pre>";
+var_dump($_SERVER);
+echo "</pre>"; */
  //Demarrage de la sesion
 if(session_status()==PHP_SESSION_NONE){
     session_start();

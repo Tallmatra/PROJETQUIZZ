@@ -10,16 +10,16 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 }
 
 
-if($_SERVER["REQUEST_METHOD"]=="GET"){
+if($_SERVER["REQUEST_METHOD"]=="GET")
+{
  
-if(isset($_REQUEST['action'] )){
-  if(($_REQUEST['action']=="accueil")){
-    require_once("PATH_VIEWS"."user".DIRECTORY_SEPARATOR."accueil.html.php");
+  if(isset($_REQUEST['action'] ))
+    {
+      if(($_REQUEST['action']=="accueil"))
+      {
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");
 
-  }
-    
-} 
-
- 
- 
- }
+      }
+      
+    } 
+}

@@ -1,15 +1,14 @@
 <?php
 
-require_once( PATH_SRC."models".DIRECTORY_SEPARATOR."user.models.php");
+include_once( PATH_SRC."models".DIRECTORY_SEPARATOR."user.models.php");
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
    if(isset($_REQUEST['action'])){
      if(($_REQUEST['action']=="connexion")){
-      $login=$_POST['login'] ;
-      $password=$_POST['password'] ;
-      
-      connexion($login,$password); 
 
+      $login=$_POST['login'] ;
+      $password=$_POST['Password'] ;
+      connexion($login,$password); 
       }
 
     }
@@ -18,11 +17,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
 
 if($_SERVER["REQUEST_METHOD"]=="GET"){
- 
-if(isset($_REQUEST['action'])){
-  if(($_REQUEST['action']=="connexion")){
-    require_once("PATH_VIEWS"."securite".DIRECTORY_SEPARATOR."connexion.html.php");
-   
+  
+  
+if(isset($_GET['action'])){
+  
+
+  if(($_GET['action']=="connexion")){
+    require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
+    
   }
     
 }else{
@@ -33,38 +35,44 @@ if(isset($_REQUEST['action'])){
 }
 
 //US1
-function connexion(string $login,string $password ):void{
-
-  $errors=[];
-  champ_obligatoire('login',$login,$errors,"login obligatoire" );
-  if(count($errors==0)){
-      valid_email('login',$login,$errors);
-
-  }
-
-  champ_obligatoire('password',$password,$errors );
-  if(count($errors==$_REQUEST0)){
-    $user=find_user_login_password($login, $password);
-    if(count($user)!=0){
-      $_SESSION["KEY_USER_CONNECT"]=$user;
-
-      header("location:".WEB_ROOT."?controller=user&action=accueil");
-      exit();
-       
-    }else{
-
-      $errors['connexion']="Login ou mot de pass Incorrect";
-      $_SESSION['KEY_ERRORS']=$errors;
-      header("location:".WEB_ROOT);
-      exit();
-
+function connexion(string $login, string $password)
+{
+    $errors=[];
+    champ_obligatoire('login', $login, $errors);
+  //  champ_obligatoire('password', $password, $errors);
+    if(count($errors)==0)
+    {
+        valid_email('login',$login,$errors);
     }
-      
-
-    }else{
-      $_SESSION['KEY_ERRORS']=$errors;
-      header("location:".WEB_ROOT);
-      exit();
-
+    valid_password('password',$password,$errors);
+    if(count($errors)==0)
+    {
+        $users= find_user_login_password($login,$password);
+        if(count($users)!=0)
+        {
+            $_SESSION[KEY_USER]= $users;
+            header("location:".WEB_ROOT."?controller=user&action=accueil");
+            exit();
+        }
+        else
+        {
+            $errors['connexion']="Login ou mot de passe incorect";
+            $_SESSION[KEY_ERRORS]= $errors;
+            header("location:".WEB_ROOT);
+            exit();
+        }
     }
+    else
+    {
+        $_SESSION[KEY_ERRORS]= $errors;
+        header("location:".WEB_ROOT);
+        exit();
+    }
+}
+function logout():void{
+  $_SESSION['user_connect']=array();
+  unset($_SESSION['user_connect']);
+  session_destroy();
+  header("location:".WEB_ROOT);
+  exit();
 } 
