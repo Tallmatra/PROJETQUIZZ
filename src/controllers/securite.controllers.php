@@ -16,22 +16,25 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 }
 
 
-if($_SERVER["REQUEST_METHOD"]=="GET"){
-  
-  
-if(isset($_GET['action'])){
-  
-
-  if(($_GET['action']=="connexion")){
-    require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
+if($_SERVER["REQUEST_METHOD"]=="GET")
+{
+      if(isset($_GET['action']))
+      {
+        if(($_GET['action']=="connexion"))
+        {
+          require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
+          
+        }
+        elseif(($_GET['action']=="deconnexion"))
+        {
+              logout();  
+        }   
+      }  
+      else
+      {
+        require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
+      }
     
-  }
-    
-}else{
-  require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
-
-}
-
 }
 
 //US1
@@ -69,10 +72,11 @@ function connexion(string $login, string $password)
         exit();
     }
 }
-function logout():void{
-  $_SESSION['user_connect']=array();
-  unset($_SESSION['user_connect']);
-  session_destroy();
-  header("location:".WEB_ROOT);
-  exit();
-} 
+
+function logout()
+{
+    session_destroy();
+    session_unset();
+    header("location:".WEB_ROOT);
+    exit(); 
+}
