@@ -7,14 +7,37 @@ function find_user_login_password(string $login,string $password):array{
     }
     return [];
 } 
-function find_users(string $role):array
+function find_login(string $login):bool
 {
-    $users=json_to_array("users"); // un tableau des utilisateurs
-    $result =[];
+    $users=json_to_array("users");
     foreach ($users as $user) 
     {
-        if($user['role']==$role)
-            $result[]=$user;
+        if($user['login']==$login)
+            return true;
     }
-    return $result;
+    return false;
+}
+function inscrireJoueur($nom,$prenom,$login,$password)
+{
+    $put=array(
+            'nom' => $nom,
+            'prenom' => $prenom,
+            'login' => $login,
+            'password' => $password,
+            'score' => '0',
+            'role' => ROLE_JOUEUR,
+            );
+                array_to_json("users",$put);
+}
+function inscrireAdmin($nom,$prenom,$login,$password)
+{
+    $put=array(
+            'nom' => $nom,
+            'prenom' => $prenom,
+            'login' => $login,
+            'password' => $password,
+            'score' => '0',
+            'role' => ROLE_ADMIN,
+            );
+                array_to_json("users",$put);
 }

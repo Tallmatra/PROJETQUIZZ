@@ -43,7 +43,7 @@
                 <div class="connexion">
                  <input type="submit" name="button" value="Connexion" id="connexion">
 
-                 <p class="lien">S'inscrire pour jouer?</p>
+                 <p class="lien"><a href="<?=WEB_ROOT."?controller=securite&action=inscrire"?>">S'inscrire pour jouer?</a></p>
                 </div>
                 
                 

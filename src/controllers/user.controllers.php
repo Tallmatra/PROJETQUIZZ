@@ -3,9 +3,10 @@
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
    if(isset($_REQUEST['action'])){
-     if(($_REQUEST['action']=="connexion")){
+     if(($_REQUEST['action']=="inscription"))
+     {
 
-      }
+    }
 
     }
 
@@ -17,7 +18,17 @@ if($_SERVER["REQUEST_METHOD"]=="GET")
  
   if(isset($_REQUEST['action'] ))
     {
+      if(!is_connect())
+      {
+        header("location:".WEB_ROOT);
+        exit(); 
+      }
       if(($_REQUEST['action']=="accueil"))
+      {
+        
+        liste_joueur();
+      }
+      elseif(($_REQUEST['action']=="liste"))
       {
         
         liste_joueur();

@@ -11,6 +11,10 @@ function json_to_array (string $key):array{
 
 
     //Enregistrement et Mis a jour des donnees du fichier
-    function array_to_json(string $key,array $data):array{
-    return [];
+function array_to_json(string $key, array $array_data)
+{
+    $array[$key]=json_to_array("users");
+    $array[$key][]=$array_data;
+    $json=json_encode(["users"=>$array[$key]],JSON_PRETTY_PRINT);
+    file_put_contents(PATH_DB, $json);
 }

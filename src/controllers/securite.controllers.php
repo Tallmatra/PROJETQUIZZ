@@ -1,14 +1,36 @@
 <?php
 
-include_once( PATH_SRC."models".DIRECTORY_SEPARATOR."user.models.php");
+require_once( PATH_SRC."models".DIRECTORY_SEPARATOR."user.models.php");
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
    if(isset($_REQUEST['action'])){
-     if(($_REQUEST['action']=="connexion")){
+     if(($_REQUEST['action']=="connexion"))
+     {
 
       $login=$_POST['login'] ;
       $password=$_POST['Password'] ;
       connexion($login,$password); 
+      }
+      elseif(($_REQUEST['action']=="inscription"))
+     {
+
+            $nom=$_POST['nom'];
+            $prenom=$_POST['prenom'];
+            $login=$_POST['login'];
+            $password=$_POST['password'];
+            if(find_login($login)==false)
+            {
+                inscrireJoueur($nom,$prenom,$login,$password);
+                require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php"); 
+            }
+            else
+            {
+                $errors=[];
+                $errors['inscription']="Login existant";
+                $_SESSION["error_ins"]= $errors;
+                header("location:".WEBROOT."?controller=securite&action=inscrire");
+                exit();
+            } 
       }
 
     }
@@ -28,7 +50,12 @@ if($_SERVER["REQUEST_METHOD"]=="GET")
         elseif(($_GET['action']=="deconnexion"))
         {
               logout();  
-        }   
+        } 
+        elseif(($_GET['action']=="inscrire"))
+        {
+          require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."inscription.html.php");
+  
+        }  
       }  
       else
       {
