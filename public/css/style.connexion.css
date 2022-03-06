@@ -1,0 +1,108 @@
+
+  
+:root{
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+*{
+    box-sizing: border-box;
+    margin: 0vh;
+    padding: 0vh;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    transform: translateY(32vh);
+    background-image: url(img-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+    
+
+}
+
+#container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+#head{
+    background-color: rgb(40, 131, 131);
+    width: 60vh;
+    height: 10vh;
+   
+   
+    
+}
+
+    
+
+
+#login{
+    width: 50vh;
+    height: 7vh;
+    font-size: 2vh;
+    margin: 3vh;
+    background-color: aliceblue;
+    border: hidden;
+    display: flex;
+    
+
+}
+#password{
+    width:50vh ;
+    height: 7vh;
+    font-size: 2vh;
+    margin: 3vh;
+    background-color: aliceblue;
+    border: hidden;
+    display: flex;
+    
+
+}
+#connexion{
+    width: 20vh;
+    height:4vh ;
+    border: hidden;
+    background-color: rgb(40, 131, 131);
+    margin: 3vh;
+    border-radius: 2vh;
+}
+.lien
+{
+    
+    margin: 4vh;
+}
+#input{
+    background-color: white;
+    border: 0.1vh solid white;
+}
+.connexion{
+    display: flex;
+}
+
+/* style pour js */
+.login input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.login.success input{
+    border-color: var(--success-color);
+}
+
+.login.error input{
+    border-color: var(--error-color);
+}
+
+.login small{
+    color: var(--error-color);
+    
+    visibility: hidden;
+}
+
+.login.error small{
+    visibility: visible;
+}
