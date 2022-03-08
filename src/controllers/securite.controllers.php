@@ -1,5 +1,5 @@
 <?php
-
+// pour charger le model
 require_once( PATH_SRC."models".DIRECTORY_SEPARATOR."user.models.php");
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
@@ -21,14 +21,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             if(find_login($login)==false)
             {
                 inscrireJoueur($nom,$prenom,$login,$password);
-                require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php"); 
+                header("location:".WEB_ROOT."?controller=securite&action=connexion");
+                exit();
             }
             else
             {
                 $errors=[];
                 $errors['inscription']="Login existant";
                 $_SESSION["error_ins"]= $errors;
-                header("location:".WEBROOT."?controller=securite&action=inscrire");
+                header("location:".WEB_ROOT."?controller=securite&action=inscrire");
                 exit();
             } 
       }

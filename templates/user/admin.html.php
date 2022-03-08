@@ -4,29 +4,9 @@
       $errors= $_SESSION["error_ins"];
       unset($_SESSION["error_ins"]);
     } 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-   <link rel="stylesheet" href="<?=WEB_PUBLIC."css".DIRECTORY_SEPARATOR."inscription.css"?>">
-    
-    <title>Document</title>
-</head>
-<body>
-    <div id="container">
-        <div id="head">
-            <div id="head1"> 
-               
-            </div>
-            <div id="head2">
-                <h1>
-                    Le plaisir de jouer
-                                                
-                </h1>
-            </div>
-        </div>
-        <div id="center">
+?>     
+                   <div class="liste">
+                    <div id="center">
             <div id="body">
                 <div id="form">
                     <div id="inscrire">
@@ -37,7 +17,7 @@
                     <div id="input">
                         <form action="<?=WEB_ROOT?>" method="POST" id="form" onsubmit="return valider()">
                             
-                            <input type="hidden" name="controller" value="securite">
+                            <input type="hidden" name="controller" value="user">
                             <input type="hidden" name="action" value="inscription">
                             <?php if (isset($errors['inscription'])):?>
                                 <p style="color:red"><?= $errors['inscription'];?></p>
@@ -89,7 +69,9 @@
             </div>
         </div>
     </div>
-    <script src="<?= WEB_PUBLIC."js".DIRECTORY_SEPARATOR."inscription.js"?>"></script>
 
+                    </div>
+        
+    <script src="<?= WEB_PUBLIC."js".DIRECTORY_SEPARATOR."inscription.js"?>"></script>
 </body>
 </html>

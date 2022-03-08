@@ -26,28 +26,27 @@ body{
   
   display: flex;
   background-color: rgb(20, 6, 51);
-  justify-content: center;
+  
   
  
 }
-#head1{
-  
- /* border: 0.2vh solid gold;*/
-  margin: 1vh;
 
-
-}
-#head2{
+ #head2{
   
   /*border: 0.2vh solid rgb(129, 89, 16);*/
   margin-bottom: 2vh;
   color: white;
   display: flex;
+ margin-left: 90vh;
+ margin-top: 3vh;
+  
 }
-#head2 h1{
+
   
-  margin-top: 3vh;
-  
+
+#head1 img{
+  height:10vh ;
+  margin-left: 2vh;
 }
 
 #body{
@@ -115,8 +114,30 @@ body{
 #logo{
   
 /*  border:0.2vh solid rgb(84, 26, 122) ;*/
+height: 20vh;
  
   background: linear-gradient(white, aqua);
+}
+#photo{
+  height: 80%;
+  width: 25%;
+  margin-top: 2vh;
+  margin-left: 4vh;
+  border: 0.1vh solid red;
+  border-radius: 50%;
+  display: flex;
+  background-color:white;
+  
+}
+#photo img{
+  height: 80%;
+  border-radius: 50%;
+  margin-top: 1.5vh;
+  margin-left: 1.5vh;
+}
+#p {
+  font-size: 7vh;
+  margin-left: 2vh;
 }
 #question{
   
@@ -136,6 +157,8 @@ body{
   background-color: #ccc;
   height: 4vh;
 }
+
+
 #liste{
   /*border:0.2vh solid rgb(84, 26, 122) ;*/
   margin: 1vh 30vh 1vh 4vh;

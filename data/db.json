@@ -22,7 +22,7 @@
             "login": "amadouabdou@gmail.com",
             "password": "joueur1",
             "role": "ROLE_JOUEUR",
-            "score": 150
+            "score": 0
         },
         {
             "nom": "Trawar\u00e9",
@@ -30,7 +30,7 @@
             "login": "renesidy@gmail.com",
             "password": "joueur",
             "role": "ROLE_JOUEUR",
-            "score": 120
+            "score": 0
         },
         {
             "nom": "Gueye",
@@ -38,7 +38,7 @@
             "login": "gmalick@gmail.com",
             "password": "joueur",
             "role": "ROLE_JOUEUR",
-            "score": 130
+            "score": 0
         },
         {
             "nom": "Dieng",
@@ -46,7 +46,7 @@
             "login": "diengdemba@gmail.com",
             "password": "joueur1",
             "role": "ROLE_JOUEUR",
-            "score": 100
+            "score": 0
         },
         {
             "nom": "Sow",
@@ -54,7 +54,7 @@
             "login": "idrissasowgandiol@gmail.com",
             "password": "joueur",
             "role": "ROLE_JOUEUR",
-            "score": 100
+            "score": 0
         },
         {
             "nom": "Mbaye",
@@ -62,7 +62,7 @@
             "login": "sallaladiva@gmail.com",
             "password": "joueur",
             "role": "ROLE_JOUEUR",
-            "score": 110
+            "score": 0
         },
         {
             "nom": "Seck",
@@ -143,6 +143,22 @@
             "password": "tahir21",
             "score": "0",
             "role": "ROLE_JOUEUR"
+        },
+        {
+            "nom": "BA",
+            "prenom": "Amadou",
+            "login": "baamadou@gmail.com",
+            "password": "admin22",
+            "score": "0",
+            "role": "ROLE_JOUEUR"
+        },
+        {
+            "nom": "gyte",
+            "prenom": "tagzut",
+            "login": "ghsy@hgs.com",
+            "password": "tahir21",
+            "score": "0",
+            "role": "ROLE_ADMIN"
         }
     ]
 }

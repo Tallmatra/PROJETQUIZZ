@@ -1,19 +1,36 @@
-const login=document.getElementById("login");
-const password=document.getElementById("password");
-const connexion=document.getElementById("connexion");
-
+const form = document.getElementById('form');
+const nom = document.getElementById('nom');
+const prenom = document.getElementById('prenom');
+const login = document.getElementById('login');
+const password = document.getElementById('password');
+const password2 = document.getElementById('password2');
+const small=document.getElementsByTagName('small');
 
 //Functions-------------------------------------------------------------
 function showError(input, message) {//Afficher les messages d'erreur
-    const input_parentn = input.parentElement;
-    input_parentn.className = 'login error';
-    const small = input_parentn.querySelector('small');
+    const formControl = input.parentElement;
+    formControl.className = 'block error';
+    const small = formControl.querySelector('small');
     small.innerText = message;
 }
+
 //
 function showSuccess(input) {
-    const input_parentn = input.parentElement;
-    input_parentn.className = 'login success'; 
+    const formControl = input.parentElement;
+    formControl.className = 'block success'; 
+}
+//
+function checkEmail(input) {//Tester si l'email est valide :  javascript : valid email
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var ok = true;
+    if (re.test(input.value.trim().toLowerCase())) {
+        showSuccess(input);
+        
+    } else {
+        showError(input,`Email is not valid!`);
+        ok=false;
+    }
+    return ok;
 }
 //
 function checkEmail(input) {//Tester si l'email est valide :  javascript : valid email
@@ -21,7 +38,6 @@ function checkEmail(input) {//Tester si l'email est valide :  javascript : valid
 
     if (re.test(input.value.trim().toLowerCase())) {
         showSuccess(input);
-        //return false;
     } else {
         showError(input,`Email is not valid!`);
         return true;
@@ -35,7 +51,6 @@ function checkRequired(inputArray) {// Tester si les champs ne sont pas vides
             return true;
         }else{
             showSuccess(input);
-        //return false;
         }
     });
 }
@@ -52,11 +67,15 @@ function checkLength(input, min, max) {//Tester la longueur de la valeur  d'un i
         showError(input, `${getFieldName(input)} doit avoir au maximum ${max} caracteres !`);
     }else{
         showSuccess(input);
-        //return false;
-
     }
 }
-
+//
+function checkPasswordMatch(input1, input2) {
+    if (input1.value !== input2.value) {
+        showError(input2, 'Passwords do not match!');
+        return true;
+    }
+}
 function validPassword(input)
 {
     var letters = /[a-zA-Z]/; 
@@ -66,16 +85,13 @@ function validPassword(input)
         showError(input, 'Le mot de passe doit contenir au moins une lettre et un chiffre');
         return true;
     }
-    //return false;
-
 }
-
-
-function allOk()
-{
-   if(checkRequired([login, password]) || checkEmail(login) ||checkLength(password, 6, 25) ||validPassword(password))
+function valider()
+{ 
+   if(checkRequired([nom,prenom,login, password, password2])||checkEmail(login)||checkLength(password, 6, 25)||validPassword(password)||checkPasswordMatch(password,password2)) 
    {
-    return false;
+        return false;
+   }else {
+       return true;
    }
-   return true;
 }

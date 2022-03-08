@@ -1,0 +1,186 @@
+:root{
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    display: flex;
+    background-image: url(img-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+   /* border: 0.3vh solid black;*/
+    display: flex;
+    flex-direction: column;
+}
+#head{
+  
+    /*  border: 0.2vh solid red;*/
+      
+      display: flex;
+      background-color: rgb(20, 6, 51);
+      justify-content: center;
+      height: 10vh;
+      
+     
+    }
+    #head1{
+      
+     /* border: 0.2vh solid gold;*/
+      margin: 1vh;
+    
+    
+    }
+    #head2{
+      
+      /*border: 0.2vh solid rgb(129, 89, 16);*/
+      margin-bottom: 2vh;
+      color: white;
+      display: flex;
+    }
+
+#head2 h1{
+  
+  margin-top: 3vh;
+  
+}
+#center{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+#body{
+    display: flex;
+  /*flex-direction: column;*/
+  width: 60%;
+  border-radius: 0.5vh;
+  background-color: white;
+  justify-content: space-between;
+  
+}
+#inscrire{
+    margin-top: 2vh;
+   
+}
+
+
+#form{
+    margin-left: 2vh;
+    
+    
+}
+/* .password{
+    border-color: aqua;
+} */
+
+#prenom{
+    width: 35vh;
+    height: 4vh;
+    font-size: 3vh;
+
+}
+#nom{
+    width: 35vh;
+    height: 4vh;
+    font-size: 3vh;
+
+}#login{
+    width: 35vh;
+    height: 4vh;
+    font-size: 3vh;
+
+}#password{
+    width: 35vh;
+    height: 4vh;
+    font-size: 3vh;
+
+}#password2{
+    width: 35vh;
+    height: 4vh;
+    font-size: 3vh;
+
+}
+label{
+    color: gray;
+    font-size: 2vh;
+}
+#avatar{
+    display: flex;
+    
+}
+.block{
+    margin-top: 7vh;
+}
+#cree{
+    margin-top: 5vh;
+    margin-left: 7vh;
+    
+}
+#cree input{
+    width: 20vh;
+    height:3vh ;
+    background-color: aqua;
+    color: white;
+    border: hidden;
+    border-radius:0.5vh ;
+    font-size: 2vh;
+}
+button{
+    text-decoration: none;
+    border: hidden;
+    border-radius:0.4vh ;
+    margin-left: 15vh;
+    background-color: aqua;
+    margin-top: 1vh;
+    font-size: 2vh;
+    color: white;
+}
+#logo{
+    height: 35vh;
+    border:  solid aqua;
+    width: 30%;
+    margin-top: 10vh;
+    margin-right: 5vh;
+    border-radius: 80%;
+}
+#avatar h3{
+    margin-top: 1vh;
+}
+/* style pour js */
+.block input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.block.success input{
+    border-color: var(--success-color);
+}
+
+.block.error input{
+    border-color: var(--error-color);
+}
+
+.block small{
+    color: var(--error-color);
+    
+    visibility: hidden;
+}
+
+.block.error small{
+    visibility: visible;
+}
+a{
+    text-decoration: none;
+}

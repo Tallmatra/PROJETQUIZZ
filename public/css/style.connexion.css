@@ -12,29 +12,79 @@
 }
 body{
     display: flex;
-    justify-content: center;
-    transform: translateY(32vh);
     background-image: url(img-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-        
-    
-
+    flex-direction: column;
+     
 }
 
+#tete{
+  
+    /*  border: 0.2vh solid red;*/
+      
+      display: flex;
+      background-color: rgb(20, 6, 51);
+      
+      
+     
+    }
+    
+     #tete2{
+      
+      /*border: 0.2vh solid rgb(129, 89, 16);*/
+      margin-bottom: 2vh;
+      color: white;
+      display: flex;
+     margin-left: 90vh;
+     margin-top: 3vh;
+      
+    }
+    
+      
+    
+    #tete1 img{
+      height:10vh ;
+      margin-left: 2vh;
+    }
+
+
+
+#body{
+    display: flex;
+        flex-direction: column;
+        
+    
+   
+}
+
+#input{
+  
+   width: 60vh;
+      
+      
+     
+}
+    
 #container{
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
+   position: absolute;
+   left: 40%;
+   margin-top: 10%;
 }
 #head{
     background-color: rgb(40, 131, 131);
     width: 60vh;
     height: 10vh;
    
-   
-    
+}
+#head h1{
+    text-align: center;
+    margin-top: 2.5vh;
+    color: white;
 }
 
     
@@ -50,6 +100,15 @@ body{
     display: flex;
     
 
+}
+.login{
+    display: flex;
+}
+.login img{
+    height: 3vh;
+    margin-top: 5vh;
+    background-color: aliceblue;
+    
 }
 #password{
     width:50vh ;
@@ -105,4 +164,7 @@ body{
 
 .login.error small{
     visibility: visible;
+}
+a{
+    text-decoration: none;
 }
