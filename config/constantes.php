@@ -24,5 +24,7 @@ define("PATH_DB",ROOT."data".DIRECTORY_SEPARATOR."db.json");
 define("WEB_ROOT","http://localhost:8002/");
 
 define("WEB_PUBLIC",str_replace("index.php","",$_SERVER['SCRIPT_NAME']));
+define("WEB_PUB",str_replace("index.php","",$_SERVER['SCRIPT_FILENAME']));
+
 define("KEY_ERRORS","errors");
 define("KEY_USER","connect_user"); 

@@ -33,7 +33,7 @@ body{
 
  #head2{
   
-  /*border: 0.2vh solid rgb(129, 89, 16);*/
+  
   margin-bottom: 2vh;
   color: white;
   display: flex;
@@ -119,10 +119,10 @@ height: 20vh;
   background: linear-gradient(white, aqua);
 }
 #photo{
-  height: 80%;
-  width: 25%;
-  margin-top: 2vh;
-  margin-left: 4vh;
+  height: 17vh;
+  width: 17vh;
+ margin-top: 2vh;
+ margin-left: 2vh;
   border: 0.1vh solid red;
   border-radius: 50%;
   display: flex;
@@ -130,10 +130,11 @@ height: 20vh;
   
 }
 #photo img{
-  height: 80%;
+  height: 15vh;
+  margin-top: 0.9vh;
+  margin-left: 0.9vh;
   border-radius: 50%;
-  margin-top: 1.5vh;
-  margin-left: 1.5vh;
+  
 }
 #p {
   font-size: 7vh;

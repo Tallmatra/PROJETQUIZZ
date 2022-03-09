@@ -1,0 +1,33 @@
+/* style pour js */
+.block input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.block.success input{
+    border-color: var(--success-color);
+}
+
+.block.error input{
+    border-color: var(--error-color);
+}
+
+.block small{
+    color: var(--error-color);
+    
+    visibility: hidden;
+}
+
+.block.error small{
+    visibility: visible;
+}
+a{
+    text-decoration: none;
+}
+#avatar_img{
+    visibility: hidden;
+}
+#img
+{
+    width: 18vh;
+}

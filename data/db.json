@@ -3,7 +3,7 @@
         {
             "nom": "Trawar\u00e9",
             "prenom": "Mamadou Tall",
-            "login": "trawaremamadou@gmail.com",
+            "login": "test@gmail.com",
             "password": "admin21",
             "role": "ROLE_ADMIN",
             "score": 0
@@ -153,12 +153,39 @@
             "role": "ROLE_JOUEUR"
         },
         {
-            "nom": "gyte",
-            "prenom": "tagzut",
-            "login": "ghsy@hgs.com",
-            "password": "tahir21",
+            "nom": "mbaye",
+            "prenom": "tahir",
+            "login": "joueur@gmail.com ",
+            "password": "admin22",
             "score": "0",
             "role": "ROLE_ADMIN"
+        },
+        {
+            "nom": "HDGHJ",
+            "prenom": "nQDHJ",
+            "login": "HDH@FG.FGS",
+            "password": "TAHIR21",
+            "score": "0",
+            "role": "ROLE_JOUEUR",
+            "profil": "Capture d\u2019\u00e9cran de 2022-03-08 02-09-38.png"
+        },
+        {
+            "nom": "wcbv",
+            "prenom": "bwx<xf<vGH",
+            "login": "tahir21@gmail.SNN",
+            "password": "TAHIR21",
+            "score": "0",
+            "role": "ROLE_ADMIN",
+            "profil": "algo4.png"
+        },
+        {
+            "nom": "gnt",
+            "prenom": "httnh",
+            "login": "gtnb@jjj.bn",
+            "password": "tahir21",
+            "score": "0",
+            "role": "ROLE_ADMIN",
+            "profil": "vovinam_viet-vo-dao.jpg"
         }
     ]
 }

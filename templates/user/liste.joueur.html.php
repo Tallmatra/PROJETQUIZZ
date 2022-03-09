@@ -1,4 +1,4 @@
-
+<div id="container">
                   <div id="liste">
                     <h1>Liste des Joueurs</h1>
                       <table>
@@ -16,11 +16,12 @@
                         <?php endforeach ?>
                       </table>
                   </div>
-                  <div>
+                  <div id="button">
                   <?php if ($page!=1) :?>
-                    <button><a href="http://localhost:8002/?controller=user&action=liste&page=<?=$page-1;?>"> Precedent</a></button>
+                    <button><a  class="a" href="http://localhost:8002/?controller=user&action=liste&page=<?=$page-1;?>"> << </a></button>
                     <?php endif ?>
                     <?php if ($page<$totalPages) :?>
-                    <button><a href="http://localhost:8002/?controller=user&action=liste&page=<?=$page+1;?>"> Suivant</a></button>
+                    <button id="button1"><a class="a" href="http://localhost:8002/?controller=user&action=liste&page=<?=$page+1;?>"> >> </a></button>
                     <?php endif ?>
                   </div>
+</div>

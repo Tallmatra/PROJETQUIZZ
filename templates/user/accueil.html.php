@@ -1,5 +1,14 @@
 <?php 
-
+//deplacer dans le dossier uploads
+if(isset($_POST['submit']))
+{
+    if(array_key_exists('image', $_FILES))
+    {
+        $image_name= $_FILES['image']['name'];
+        $tmp_image= $_FILES['image']['tmp_name'];
+        $folder= WEB_PUB."uploads".DIRECTORY_SEPARATOR;
+        move_uploaded_file($tmp_image, $folder.$image_name);
+}   }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +42,7 @@
                     </h1>
                 </div>
                 <div id="deconnexion">
-                <input type="submit" name="" value="Deconnexion"   onclick="window.location.href = '<?= WEB_ROOT."?controller=securite&action=deconnexion" ?>';">
+                <input type="submit" name="" value="Deconnexion"   enctype="multipart/form-data"  onclick="window.location.href = '<?= WEB_ROOT."?controller=securite&action=deconnexion"  ?>';">
                 </div>
             </div>
             <div id="corps">
@@ -63,5 +72,7 @@
             </div>
         </div>
     </div>
+    <script src="<?= WEB_PUBLIC."js".DIRECTORY_SEPARATOR."inscription.js"?>"></script>
+
 </body>
 </html>

@@ -1,0 +1,43 @@
+
+.header
+{
+    height: 50%;
+    background-color: #052426;
+    width: 100%;
+    display: flex;
+}
+.header h1
+{
+    color: white;
+    margin-left: 37%;
+}
+.header img
+{
+    margin-left: 1%;
+}
+
+.text_error button
+{
+    margin-top: 1.5%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    background-color: #51BFD0;
+    color: white;
+    font-size: 20px;
+}
+.error_contain
+{
+    display: flex;
+   justify-content: center;
+   margin-top: 15%;
+}
+.text_error
+{
+    color: #052426;
+    width: 40%;
+    font-size: 20px;
+}
+.text_error h1
+{
+    width: 50%;
+}

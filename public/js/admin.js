@@ -95,21 +95,3 @@ function valider()
        return true;
    }
 }
-//changement image
-
-const logo=document.getElementById('logo');
-const img=document.getElementById('img');
-const file=document.getElementById('avatar_img');
-
-file.addEventListener("change", function(){
-        const choix= this.files[0];
-        if(choix)
-        {
-            const read= new FileReader();
-            read.addEventListener("load",function(){
-                img.setAttribute('src', read.result);
-            });
-            read.readAsDataURL(choix);
-        }
-});
-

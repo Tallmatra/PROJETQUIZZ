@@ -24,29 +24,31 @@ body{
     flex-direction: column;
 }
 #head{
-  
-    /*  border: 0.2vh solid red;*/
-      
+           
       display: flex;
       background-color: rgb(20, 6, 51);
-      justify-content: center;
       height: 10vh;
+      
+      
       
      
     }
-    #head1{
+    
       
-     /* border: 0.2vh solid gold;*/
-      margin: 1vh;
+    #head1 img{
+            height: 10vh ;
+            margin-left: 2vh;
+            width: 10vh;
+          }
     
     
-    }
     #head2{
       
-      /*border: 0.2vh solid rgb(129, 89, 16);*/
-      margin-bottom: 2vh;
       color: white;
       display: flex;
+      display: flex;
+      margin-left: 80vh;
+      
     }
 
 #head2 h1{
@@ -72,7 +74,14 @@ body{
 }
 #inscrire{
     margin-top: 2vh;
+    margin-left: 2vh;
    
+   
+}
+hr{
+    margin-top: 4vh;
+    width: 70vh;
+    
 }
 
 
@@ -81,34 +90,37 @@ body{
     
     
 }
+#formulaire
+{
+    display: flex;
+}
 /* .password{
     border-color: aqua;
 } */
 
 #prenom{
-    width: 35vh;
-    height: 4vh;
+    width: 60vh;
+    height: 5vh;
     font-size: 3vh;
 
 }
 #nom{
-    width: 35vh;
-    height: 4vh;
+    width: 60vh;
+    height: 5vh;
     font-size: 3vh;
 
 }#login{
-    width: 35vh;
-    height: 4vh;
+    width: 60vh;
+    height: 5vh;
     font-size: 3vh;
 
 }#password{
-    width: 35vh;
-    height: 4vh;
+    width: 60vh;
+    height: 5vh;
     font-size: 3vh;
-
 }#password2{
-    width: 35vh;
-    height: 4vh;
+    width: 60vh;
+    height: 5vh;
     font-size: 3vh;
 
 }
@@ -121,7 +133,7 @@ label{
     
 }
 .block{
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 #cree{
     margin-top: 5vh;
@@ -150,9 +162,10 @@ button{
 #logo{
     height: 35vh;
     border:  solid aqua;
-    width: 30%;
-    margin-top: 10vh;
+    width: 35vh;
+    margin-top: 4%;
     margin-right: 5vh;
+    margin-left: 50%;
     border-radius: 80%;
 }
 #avatar h3{
@@ -183,4 +196,19 @@ button{
 }
 a{
     text-decoration: none;
+}
+img{
+    height: 33vh;
+    width: 33vh;
+    border-radius:50%;
+    margin-left: 0.7vh;
+    margin-top: 0.7vh;
+    
+}
+#avatar_img{
+    visibility: hidden;
+}
+#img
+{
+    width: 100%;
 }

@@ -16,5 +16,6 @@ function array_to_json(string $key, array $array_data)
     $array[$key]=json_to_array("users");
     $array[$key][]=$array_data;
     $json=json_encode(["users"=>$array[$key]],JSON_PRETTY_PRINT);// jpp pour embellir le stockage dans le fichier json
+    
     file_put_contents(PATH_DB, $json);
 }
