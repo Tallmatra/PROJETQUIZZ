@@ -1,0 +1,74 @@
+#droite{
+    height: 67vh;
+    width: 80vh;
+    margin-top: 2vh;
+    margin-left: 3vh;
+    border-radius: 1vh;
+}
+#nbre{
+    height: 60vh;
+    width: 80vh;
+    
+    background-color: white;
+
+
+}
+
+#nbre1{
+    display: flex;
+    justify-content: center;
+    
+ 
+    
+
+}
+
+    
+
+.numb{
+    width: 6vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    
+}
+#nbre1 button{ 
+    width: 4vh;
+    margin-left: 3vh;
+    background-color: rgb(39, 39, 138);
+    color: white;
+    border-color:rgb(39, 39, 138); 
+    margin-top: 1vh;
+
+}
+
+#nbre2{
+    height: 53.5vh;
+    width: 75vh;
+    border: 0.1vh solid rgb(124, 124, 124);
+    margin-left: 2.5vh;
+    margin-top: 2vh;
+    border-radius: 1vh;
+    
+
+
+}
+#svt{
+    background-color: rgb(245, 239, 230);
+}
+#svt1{
+    display: flex;
+    justify-content: end;
+    margin-right: 2vh;
+    height: 6.5vh;
+    
+    
+    
+}
+#svt1 button{
+    width: 15vh;
+    height: 4vh;
+    font-size: 3vh;
+    background-color: aqua;
+    border-color: aqua;
+    margin-top: 1vh;
+}

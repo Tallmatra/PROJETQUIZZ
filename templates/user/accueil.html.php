@@ -17,6 +17,8 @@ if(isset($_POST['submit']))
     <link rel="stylesheet" href="<?=WEB_PUBLIC."css".DIRECTORY_SEPARATOR."style.accueil.css"?>">
     <link rel="stylesheet" href="<?=WEB_PUBLIC."css".DIRECTORY_SEPARATOR."liste.joueurs.css"?>">
     <link rel="stylesheet" href="<?=WEB_PUBLIC."css".DIRECTORY_SEPARATOR."admin.css"?>">
+    <link rel="stylesheet" href="<?=WEB_PUBLIC."css".DIRECTORY_SEPARATOR."cree.question.css"?>">
+    
 
     <title>Document</title>
 </head>
@@ -60,10 +62,10 @@ if(isset($_POST['submit']))
                         
                         <?php if(is_admin()):?>
                         <a href="<?=WEB_ROOT."?controller=user&action=accueil"?>">Acceuil <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-liste.png"?>" alt=""></a>
-                         <a href="">Liste de Questions <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-ajout.png"?>" alt=""> </a>
+                         <a href="<?=WEB_ROOT."?controller=user&action=listeQuestion"?>">Liste de Questions <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-ajout.png"?>" alt=""> </a>
                         <a href="<?=WEB_ROOT."?controller=user&action=admin"?>"> Créer un Admin <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-liste-active.png"?>" alt=""></a>
                         <a href="<?=WEB_ROOT."?controller=user&action=liste"?>">Liste de Joueurs <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-liste.png"?>" alt=""></a>
-                        <a href="">Créer Questions <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-ajout.png"?>" alt=""></a> 
+                        <a href="<?=WEB_ROOT."?controller=user&action=creeQuestion"?>">Créer Questions <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-ajout.png"?>" alt=""></a> 
                         
                     </div>
                 </div>
@@ -72,7 +74,9 @@ if(isset($_POST['submit']))
             </div>
         </div>
     </div>
+    <script src="<?=WEB_PUBLIC."js".DIRECTORY_SEPARATOR."cree.question.js"?>"></script>
     <script src="<?= WEB_PUBLIC."js".DIRECTORY_SEPARATOR."inscription.js"?>"></script>
+    
 
 </body>
 </html>
