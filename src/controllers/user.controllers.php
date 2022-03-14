@@ -70,12 +70,7 @@ if($_SERVER["REQUEST_METHOD"]=="GET")
         $contain = ob_get_clean();
         require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");
       } */ 
-      elseif($_REQUEST['action']="creeQuestion"){
-        ob_start();
-        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."cree.question.html.php");
-        $contain = ob_get_clean();
-        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");
-       }
+      
       else{
         require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."error.html.php");
       }

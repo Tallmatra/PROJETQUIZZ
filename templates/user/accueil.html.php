@@ -65,7 +65,7 @@ if(isset($_POST['submit']))
                          <a href="<?=WEB_ROOT."?controller=user&action=listeQuestion"?>">Liste de Questions <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-ajout.png"?>" alt=""> </a>
                         <a href="<?=WEB_ROOT."?controller=user&action=admin"?>"> Créer un Admin <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-liste-active.png"?>" alt=""></a>
                         <a href="<?=WEB_ROOT."?controller=user&action=liste"?>">Liste de Joueurs <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-liste.png"?>" alt=""></a>
-                        <a href="<?=WEB_ROOT."?controller=user&action=creeQuestion"?>">Créer Questions <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-ajout.png"?>" alt=""></a> 
+                        <a href="<?=WEB_ROOT."?controller=question&action=creeQuestion"?>">Créer Questions <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-ajout.png"?>" alt=""></a> 
                         
                     </div>
                 </div>

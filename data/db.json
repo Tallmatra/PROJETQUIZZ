@@ -187,5 +187,65 @@
             "role": "ROLE_ADMIN",
             "profil": "vovinam_viet-vo-dao.jpg"
         }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "question": "xbhjg",
+            "point": "6",
+            "type": "checkbox",
+            "reponses": [
+                "tahir",
+                "mbaye",
+                "dhjyh",
+                "wbhgs"
+            ],
+            "correct": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "id": 2,
+            "question": "capile du rail",
+            "point": "3",
+            "type": "radio",
+            "reponses": [
+                "thies",
+                "tahir",
+                "tahir",
+                "fhgf"
+            ],
+            "correct": [
+                "1"
+            ]
+        },
+        {
+            "id": 3,
+            "question": "capile du rail",
+            "point": "5",
+            "type": "text",
+            "reponses": [
+                "tahir"
+            ],
+            "correct": [
+                "tahir"
+            ]
+        },
+        {
+            "id": 4,
+            "question": "",
+            "point": "",
+            "type": "radio",
+            "reponses": [
+                "",
+                "sbns",
+                "",
+                ""
+            ],
+            "correct": [
+                "2"
+            ]
+        }
     ]
 }

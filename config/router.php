@@ -11,6 +11,9 @@ if(isset($_REQUEST['controller'])){
       case "user" :
         require_once(PATH_SRC."controllers/user.controllers.php");
       break;
+      case "question" :
+        require_once(PATH_SRC."controllers/question.controller.php");
+      break;
       default:
       require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."error.html.php");
   }
