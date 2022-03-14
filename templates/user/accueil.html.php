@@ -74,9 +74,8 @@ if(isset($_POST['submit']))
             </div>
         </div>
     </div>
-    <script src="<?=WEB_PUBLIC."js".DIRECTORY_SEPARATOR."cree.question.js"?>"></script>
     <script src="<?= WEB_PUBLIC."js".DIRECTORY_SEPARATOR."inscription.js"?>"></script>
-    
 
+    
 </body>
 </html>

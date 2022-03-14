@@ -1,5 +1,5 @@
 #right{
-    height:70vh ;
+    height:auto;
     background-color: white;
     width: 100vh;
     border-radius: 1vh;
@@ -17,7 +17,7 @@
 }
 #groupe{
     border: 0.1vh solid aqua;
-    height: 60vh;
+    height:auto;
     width:90vh ;
     margin-left: 4vh;
     font-size: 3vh;
@@ -103,8 +103,10 @@
      border-color: aqua;
      color: aqua;
      font-size: 2.5vh;
-
      
-    
+}
+.src{
+    border: hidden;
+    color: aqua;
 }
 

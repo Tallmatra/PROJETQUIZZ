@@ -97,7 +97,7 @@ function valider()
 }
 //changement image
 
-const logo=document.getElementById('logo');
+/* const logo=document.getElementById('logo');
 const img=document.getElementById('img');
 const file=document.getElementById('avatar_img');
 
@@ -111,5 +111,5 @@ file.addEventListener("change", function(){
             });
             read.readAsDataURL(choix);
         }
-});
+}); */
 
